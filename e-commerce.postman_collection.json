@@ -1,0 +1,653 @@
+{
+	"info": {
+		"_postman_id": "4abad2af-1cba-4f5c-af4a-8fc4b334b6b2",
+		"name": "e-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21219445"
+	},
+	"item": [
+		{
+			"name": "sastaStore",
+			"item": [
+				{
+					"name": "http://localhost:3000/admin/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"Admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/register Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"Admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rohit\",\r\n    \"email\":\"rohit@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"mobileNumber\": 7046043703\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"rohit@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/category/addCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGYyZjc2NTU4ZDMyYTEyZGYyZmYiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzkzMDE4NH0.FRBQQ_hGTJVvCnIjIUL3G-8SdnV7a-1ZSGWVO_fRH-g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"Electornic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/addCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/subCategory/addSubCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGYyZjc2NTU4ZDMyYTEyZGYyZmYiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzkzMDE4NH0.FRBQQ_hGTJVvCnIjIUL3G-8SdnV7a-1ZSGWVO_fRH-g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"632d8fb576558d32a12df307\",\r\n    \"subCategory\":\"TV\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subCategory/addSubCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subCategory",
+								"addSubCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/product/addProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGYyZjc2NTU4ZDMyYTEyZGYyZmYiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzkzMDE4NH0.FRBQQ_hGTJVvCnIjIUL3G-8SdnV7a-1ZSGWVO_fRH-g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"MI 48 inch smart tv\",\r\n    \"brand\":\"Samsung\",\r\n    \"category\":\"632d8fb576558d32a12df307\",\r\n    \"subCategory\":\"632d901c76558d32a12df319\",\r\n    \"price\":55000,\r\n    \"quantity\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/product/editProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGYyZjc2NTU4ZDMyYTEyZGYyZmYiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY2MzkzMDE4NH0.FRBQQ_hGTJVvCnIjIUL3G-8SdnV7a-1ZSGWVO_fRH-g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"632d906676558d32a12df31c\",\r\n    \"name\": \"iPhone 14 pro max\",\r\n    \"price\": 140000,\r\n    \"quantity\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/editProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"editProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/product/listProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/listProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"listProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/product/searchProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search\":\"mobile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/searchProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"searchProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/product/filterProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sorting\": \"1\",\r\n    \"brand\": \"Apple\",\r\n    \"category\": \"632d8fb576558d32a12df307\",\r\n    \"min\": \"40000\",\r\n    \"max\": \"120000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/filterProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"filterProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/cart/addCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"632d906676558d32a12df31c\",\r\n    \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cart/addCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"addCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/cart/getCart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cart/getCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"getCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/cart/editCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"632d906676558d32a12df31c\",\r\n    \"quantity\": -5\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cart/editCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"editCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/cart/removeCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"632d90c676558d32a12df32c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cart/removeCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"removeCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/cart/buyCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"abc fkdjd dfjlkdfjdsil\",\r\n    \"mobileNumber\": 8200818663\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cart/buyCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cart",
+								"buyCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/order/getOrders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/getOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"getOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/order/getOrders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"632d906676558d32a12df31c\",\r\n    \"quantity\": 10,\r\n    \"address\": \"abc fkdjd dfjlkdfjdsil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/createOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/order/cancelOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzJkOGQ5Nzc2NTU4ZDMyYTEyZGYyYzkiLCJlbWFpbCI6InJvaGl0QGdtYWlsLmNvbSIsImlhdCI6MTY2MzkyOTc4MX0.LE84xZ5V1GzaUT9jMtnxtgiVaFlCxsfZk3E9hvV7g10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderId\": \"6334140634d8e6f9abd936be\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/cancelOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"cancelOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
